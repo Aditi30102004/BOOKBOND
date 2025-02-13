@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMate - Connect Through Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BookMate</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Clubs</a></li>
+                <li><a href="#">Authors</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Your Hub for Books, Reviews, and Clubs</h2>
+        <p>Join a community of book enthusiasts and share your thoughts, reviews, and connect with like-minded readers.</p>
+        <button class="cta-btn">Sign Up Now</button>
+    </section>
+
+    <!-- Review Section -->
+    <section class="reviews">
+        <h2>Latest Reviews</h2>
+        <div class="review-list">
+            <div class="review-card">
+                <h3>The Great Gatsby</h3>
+                <p>"A timeless classic. Fitzgerald’s portrayal of the Jazz Age is unmatched."</p>
+                <span>- ReaderGuru</span>
+            </div>
+            <div class="review-card">
+                <h3>Brave New World</h3>
+                <p>"A dystopian masterpiece. The future as envisioned by Huxley feels scarily real."</p>
+                <span>- SciFiMaster</span>
+            </div>
+            <!-- More reviews can be added dynamically -->
+        </div>
+        <button class="add-review-btn">Add Review</button>
+    </section>
+
+    <!-- Book Clubs Section -->
+    <section class="clubs">
+        <h2>Join Popular Book Clubs</h2>
+        <div class="club-list">
+            <div class="club-card">
+                <h3>Mystery Lovers</h3>
+                <p>Dive into thrilling mysteries and debate shocking twists.</p>
+                <button class="join-club-btn">Join Club</button>
+            </div>
+            <div class="club-card">
+                <h3>Historical Fiction Fanatics</h3>
+                <p>Engage in discussions about historical settings and events in fiction.</p>
+                <button class="join-club-btn">Join Club</button>
+            </div>
+            <!-- More clubs can be added dynamically -->
+        </div>
+        <button class="create-club-btn">Create Club</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 BookMate. Connect through stories.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Modal for Review and Club Creation -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Add Review / Create Club</h3>
+            <form id="modal-form">
+                <input type="text" id="form-title" placeholder="Title" required>
+                <textarea id="form-content" placeholder="Write your review or club description here..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
